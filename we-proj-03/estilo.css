@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fff5f8;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #b94e80;
+    margin-bottom: 3rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(185, 78, 128, 0.15);
+    border-bottom: 4px solid;
+}
+
+.entrada {
+    border-color: #f8a5c2;
+}
+
+.processamento {
+    border-color: #e87ea1;
+}
+
+.feedback {
+    border-color: #d6487c;
+}
+
+h3 {
+    color: #a03f6b;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #7a3559;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #f8c8dc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #d6487c;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(90deg, #e87ea1, #d6487c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #d6487c, #b94e80);
+    transform: scale(1.02);
+}
+
+#resultado, #situacao {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff0f5;
+}
+
+.aprovado {
+    color: #2d8a4e;
+    background: #e6f9ed;
+}
+
+.recuperacao {
+    color: #d4a02c;
+    background: #fff8e1;
+}
+
+.reprovado {
+    color: #c0392b;
+    background: #fdeaea;
+}
